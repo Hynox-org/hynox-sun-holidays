@@ -157,7 +157,7 @@ export default function Home() {
     },
   ];
 
-  const galleryData = Array.from({ length: 14 }, (_, i) => ({
+  const galleryData = Array.from({ length: 11 }, (_, i) => ({
     id: i + 1,
     title: `Gallery Image ${i + 1}`,
     region: "South India",
@@ -367,7 +367,6 @@ export default function Home() {
                   }}
                 ></div>
                 <h3 className="text-2xl font-bold mb-2">{region.name}</h3>
-                <p>{region.description}</p>
               </button>
             ))}
           </div>
@@ -522,9 +521,6 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-black mb-4 text-center">
             Photo Gallery
           </h2>
-          <p className="text-gray-600 text-center mb-12">
-            Experience the beauty of South India
-          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredGallery.map((item) => (
               <button
@@ -566,7 +562,7 @@ export default function Home() {
                     >
                       +91 88070 01442
                     </a>
-                    <br/>
+                    <br />
                     <a
                       href="tel:+918637687531"
                       className="text-gray-600 hover:text-yellow-400"
@@ -608,9 +604,7 @@ export default function Home() {
                     <h4 className="text-lg font-bold text-black">
                       Business Hours
                     </h4>
-                    <p className="text-gray-600">
-                      24/7
-                    </p>
+                    <p className="text-gray-600">24/7</p>
                   </div>
                 </div>
               </div>
@@ -787,10 +781,16 @@ export default function Home() {
           </div>
           <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
             <p>&copy; 2025 Sun Holidays. All rights reserved.</p>
-            <p className="text-sm border-t border-gray-700 pt-4 mt-4">
-              Powered by{" "}
-              <span className="text-yellow-400 font-semibold">HYNOX</span>
-            </p>
+            <a
+              href="https://www.hynox.in"
+              target="_blank"
+              className="hover:text-yellow-400"
+            >
+              <p className="text-sm border-t border-gray-700 pt-4 mt-4">
+                Powered by{" "}
+                <span className="text-yellow-400 font-semibold">HYNOX</span>
+              </p>
+            </a>
           </div>
         </div>
       </footer>
